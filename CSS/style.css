@@ -220,8 +220,8 @@
     /* INICIO ABA DE CONTATO */
     #contato{
         padding: 2rem;
-        background-color: white;
-        color: black; 
+        background-color: #111;
+        color: white; 
         text-align: center;
         display: flex;
         flex-direction: column;
@@ -256,4 +256,5 @@
       color: #bfa760;
       padding: 15px;
       background-color: #000;
+
     }
