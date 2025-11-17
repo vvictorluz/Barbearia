@@ -99,9 +99,8 @@
     .Servico-ul {
         list-style-type: none;
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(450px, 2fr));
+        grid-template-columns: repeat(auto-fit, minmax(45%, 2fr));
         justify-items: center;
-        
         margin-right: 5%;
         margin-left: 5%;
     }
@@ -199,3 +198,16 @@
       padding: 15px;
       background-color: #000;
     }
+
+@media (max-width: 670px){
+
+    .Servico-ul {
+        list-style-type: none;
+        display: block;
+        grid-template-columns: repeat(auto-fit, minmax(45%, 2fr));
+        justify-items: center;
+        margin-right: 5%;
+        margin-left: 5%;
+    }
+
+}

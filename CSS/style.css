@@ -268,7 +268,7 @@
     #Servicos-ul{
         list-style-type: none;
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(auto, 2fr));
+        grid-template-columns: repeat(auto-fit, minmax(500px, 2fr));
         justify-items: center;
         align-items: center;
     }
