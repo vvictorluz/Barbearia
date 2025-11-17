@@ -13,65 +13,115 @@
         padding: 0;
     }
 
-    /* ITENS CABEÇALHO */
     header {
-        align-items: center;          
-        justify-content: center;      
-        position: relative;          
-        background-color: black;
-        display: flex;
-        justify-content: space-between;
-        padding: 1rem;
-        border-bottom: #222 solid 5px;
-        padding-right: 2rem;
-    }
-    
-    /* IMAGEM CABEÇALHO */
-    .Logo{          
-        left: 0;
-        height: 100%;
-        padding: auto;
-        text-decoration: none;
-        color: gold;
-    }
-
-    /* MENU CABEÇALHO */
-    nav#nav_principal{
-        display: flex;
-        gap: 20px;
-        align-items: center;
-    }
-
-    #nav_ul {
-        display: flex;
-        list-style: none;
-        gap: 20px;
-    }
+  background: black;
+  padding: 1rem 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  position: relative;
+  z-index: 100;
+  border-bottom: #111 3px;
+}
 
 
-    .nav_li{
-        display: flex;
-        justify-content: space-between;
-        padding-block: 16px;
-    }
-    
-    #nav_ul :hover {
-        transform: translateY(-2px);
-        transition: all 0.5s ease;
-        color: #a38111;
-    
-    }
+button.hamburguer{
+  width: 40px;
+  height: 25px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  z-index: 101;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 0;
+}
 
-    .nav_li a{
-        color: #d4af37;
-        text-decoration: none;
-        font-family: sans-serif;
-        display: block;
-        width: 100%;
-        height: 100%;
-        text-align: center;
-        font-size: 1.2rem;
-    }
+button.hamburguer:hover{
+    transform: translateX(2px);
+    color: transparent;
+}
+
+button span {
+  width: 100%;
+  height: 3px;
+  background: #ffffff;
+  border-radius: 3px;
+  transition: all 0.3s ease;
+  display: block;
+}
+
+button.active span:nth-child(1) {
+  transform: rotate(45deg) translate(8px, 8px);
+}
+
+button.active span:nth-child(2) {
+  opacity: 0;
+}
+
+button.active span:nth-child(3) {
+  transform: rotate(-45deg) translate(8px, -8px);
+}
+
+nav.Menu {
+  position: fixed;
+  top: 0;
+  right: -100%;
+  width: 80%;
+  max-width: 400px;
+  height: 100vh;
+  background: rgb(0, 0, 0);
+  box-shadow: -5px 0 15px rgba(0, 0, 0, 0.2);
+  transition: right 0.4s ease;
+  z-index: 99;
+  padding-top: 100px;
+}
+
+nav.active {
+  right: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  border-bottom: 1px solid #f0f0f0;
+}
+
+a.MenuA {
+  display: block;
+  padding: 1.2rem 2rem;
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 1.1rem;
+  transition: all 0.3s ease;
+}
+
+a.MenuA:hover {
+  background: linear-gradient(yellow, gold);
+  color: rgb(0, 0, 0);
+  padding-left: 2.5rem;
+}
+
+aside.Lateral {
+  position: fixed;
+  top: 50px;
+  width: fit-content;
+  height: fit-content;
+  background: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+  
+}
+
+aside.active {
+  opacity: 1;
+  visibility: visible;
+}
 
     /* IMAGENS CARROSSEL */
     #imagem-barbearia {
@@ -119,7 +169,7 @@
         position: absolute;
         top: 50%;
         transform: translateY(-50%);
-        background: rgba(255, 255, 255, 0.5);
+        background: rgba(255, 255, 255, 0.01);
         border: none;
         color: #333;
         font-size: 24px;
@@ -235,25 +285,31 @@
         color: #bfa760;
     }
 
+    a.LinkWhats{
+        color: #000;
+        text-decoration: none;
+    }
+
     /* BOTÕES INICIO */
     .Bot-Inicio{
         background-color: #d4af37;
         border: none;
-        color: #000;
         border-radius: 6px;
         cursor: pointer;
         font-weight: bold;
-        padding: 10px 20px;
-    }
-
-   a.Bot-Inicio {
-        text-decoration: none;
+        padding: 10px 20px; 
+        
         color: black;
     }
 
-    a.Bot-Inicio:hover {
+    .Bot-Inicio:hover {
         background-color: #a38111;  
         transition: all 0.5s ease;     
+    }
+
+    a{
+        text-decoration: none;
+        color: black;
     }
 
     /* INICIO ABA DE SERVIÇOS */
@@ -341,25 +397,9 @@
         justify-content: center;
     }
 
-    button {
-    background-color: #d4af37;
-    border: none;
-    color: #000;
-    
-    cursor: pointer;
-    font-weight: bold;
-    }
-
-     button:hover {
-         background-color: #a38111;
-         transform: translateY(2px);
-         transition: all 0.5s ease;
-      
-    } 
-
     #iframe{
-        width:"600";
-         height:"250";
+        width: 55%;
+         height: 50%;
     }
 
     footer {
@@ -377,29 +417,6 @@
 
     }
 
-    #nav_ul{
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100vw;
-        height: 100vh;
-        background: green;
-        clip-path: circle(100px at 90% -15%);
-        transition: 1s ease-out;
-
-        flex-direction: column;
-        justify-content: space-around;
-        align-items: center;
-        gap: 0;
-        pointer-events: none;
-
-    }
-
-    .nav.active #nav-ul{
-        clip-path: circle(1500px at 90% -15%);
-        pointer-events: all;
-    }
-
 
     /* ORGANIZAÇÃO/FORMATO DO INICIO */
     .FundoBemVindo{
@@ -412,6 +429,7 @@
         align-items: center;
         justify-content: center;
     }
+
 
     #Servicos-ul{
         list-style-type: none;

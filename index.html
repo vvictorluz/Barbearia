@@ -10,24 +10,27 @@
 </head>
 <body>
   <header>
-            <!-- LOGO CABEÇALHO -->
-            <a  class="Logo" href="index.html">
-              <img src="./assets/LogoBranca.png" height="25%" width="25%" >
-            </a>
-       
+    <a class="Logo"><img src="./assets/LogoBranca.png" height="25%" width="25%"></a>
+     
+ <button class="hamburguer" id="hamburger" aria-label="Menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
 
-
-      <!-- MENU CABEÇALHO -->
-      <nav id="nav_principal">
-        <ul id="nav_ul">
-          <li class="nav_li"><a href="./servicos.html"><b>Serviços</b></a></li>
-          <li class="nav_li"><a href="./equipe.html"><b>Equipe</b></a></li>
-          <li class="nav_li"><a href="./index.html#contato6"><b>Contato</b></a></li>
-        </ul>
-      </nav>
-  </header>
-
+</header>
+<aside class="Lateral" id="overlay"></aside>
   
+  <nav class="Menu"  id="menu">
+      <ul>
+        <li><a href="./index.html" class="MenuA">Página Principal</a></li>
+        <li><a href="./servicos.html" class="MenuA">Serviços</a></li>
+        <li><a href="./equipe.html" class="MenuA">Nossa equipe</a></li>
+        <li><a href="./index.html#contato" class="MenuA">Contato</a></li>
+      </ul>
+   </nav>
+
+
   <section class="carousel">
       <button class="carousel-btn prev" aria-label="Imagem anterior">&#10094;</button>
       
@@ -68,7 +71,7 @@
       </article>
       
       <!-- BOTÕES MENU BEM VINDO -->
-      <button class="Bot-Inicio">Agende Agora</button>
+      <button class="Bot-Inicio"><a href="https://wa.me/48996064331" target="_blank" class="LinkWhats">Agende Agora</a></button>
     </section>
 
     <!-- NOSSOS SERVIÇOS -->
@@ -81,7 +84,7 @@
         <li class="Servicos-li"><img src="./assets/Logos-Serviços/Depilação.png" height="20%" width="20%"><h4>Depilação Facial:</h4> <p>Remoção segura e eficaz dos pelos indesejados.</p></li>
         </p></li>
       </ul>
-      <button><a href="./servicos.html" target="_self" class="Bot-Inicio">Veja mais sobre nossos serviços</a></button>
+      <button class="Bot-Inicio" ><a href="./servicos.html" target="_self" >Veja mais sobre nossos serviços</a></button>
     </section>
 
     <section id="PorQue">
@@ -102,8 +105,8 @@
   </main>
 
   <footer>
-    <p><strong>Endereço:</strong> Rua 30 de Dezembro, 149 — Içara SC</p>
     <iframe src="https://www.google.com/maps/embed?pb=!4v1763193733558!6m8!1m7!1sZhJonYvM6Z3WiS7czUBjbQ!2m2!1d-28.71425258210304!2d-49.29484424472558!3f208.02060385855765!4f-4.881190924010596!5f0.7820865974627469"  style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" id="iframe"></iframe>
+    <p><strong>Endereço:</strong> Rua 30 de Dezembro, 149 — Içara SC</p>s
     <p>© Barbearia Real — Todos os direitos reservados</p>
   </footer>
 </body>

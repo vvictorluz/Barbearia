@@ -7,24 +7,30 @@
   <title>Barbearia Real</title>
   <link rel="icon" type="image" href="./assets/Icone.jpg">
   <link rel="stylesheet" href="./CSS/StyleEquipe.css">
+    <script defer src="./JS/script.js"></script>
 </head>
 <body>
   <header>
-            <!-- LOGO CABEÇALHO -->
-            <a  class="Logo" href="./index.html">
-              <img src="./assets/LogoBranca.png" height="25%" width="25%" >
-            </a>
-       
-      <!-- MENU CABEÇALHO -->
-      <nav id="nav_principal">
-        <ul id="nav_ul">
-          <li class="nav_li"><a href="./servicos.html"><b>Serviços</b></a></li>
-          <li class="nav_li"><a href="./equipe.html"><b>Equipe</b></a></li>
-          <li class="nav_li"><a href="./index.html#contato"><b>Contato</b></a></li>
-        </ul>
-      </nav>
-    </header>
-    
+    <a href="./index.html" class="Logo"><img src="./assets/LogoBranca.png" height="25%" width="25%"></a>
+     
+ <button class="hamburguer" id="hamburger" aria-label="Menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+</header>
+<aside class="Lateral" id="overlay"></aside>
+  
+  <nav class="Menu"  id="menu">
+      <ul>
+        <li><a href="./index.html" class="MenuA">Página Principal</a></li>
+        <li><a href="./servicos.html" class="MenuA">Serviços</a></li>
+        <li><a href="./equipe.html" class="MenuA">Nossa equipe</a></li>
+        <li><a href="./index.html#contato" class="MenuA">Contato</a></li>
+      </ul>
+   </nav>
+
 <main>
     <section id="EquipeDetalhes">
         
@@ -52,7 +58,7 @@
 
 
    <footer>
-    <p><strong>Endereço:</strong> Rua 30 de Dezembro, 149 — Içara SC</p>
     <iframe src="https://www.google.com/maps/embed?pb=!4v1763193733558!6m8!1m7!1sZhJonYvM6Z3WiS7czUBjbQ!2m2!1d-28.71425258210304!2d-49.29484424472558!3f208.02060385855765!4f-4.881190924010596!5f0.7820865974627469" width="50%" height="25%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <p><strong>Endereço:</strong> Rua 30 de Dezembro, 149 — Içara SC</p>
     <p>© Barbearia Real — Todos os direitos reservados</p>
   </footer>
