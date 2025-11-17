@@ -15,21 +15,45 @@
               <img src="./assets/LogoBranca.png" height="25%" width="25%" >
             </a>
        
+
+
       <!-- MENU CABEÇALHO -->
       <nav id="nav_principal">
         <ul id="nav_ul">
           <li class="nav_li"><a href="./servicos.html"><b>Serviços</b></a></li>
           <li class="nav_li"><a href="./equipe.html"><b>Equipe</b></a></li>
-          <li class="nav_li"><a href="#contato"><b>Contato</b></a></li>
+          <li class="nav_li"><a href="./index.html#contato6"><b>Contato</b></a></li>
         </ul>
       </nav>
   </header>
 
-  <!-- FOTOS CARROSSEL -->
-  <picture>
-    <img src="./assets/Img-Carrossel/aberturaSite.jpg" alt="Ambiente barbearia" id="imagem-barbearia">
-  </picture>
-
+  
+  <section class="carousel">
+      <button class="carousel-btn prev" aria-label="Imagem anterior">&#10094;</button>
+      
+      <figure class="carousel-container">
+          <img src="./assets/Img-Carrossel/aberturaSite.jpg" alt="Img1-Carrossel" class="carousel-image active">
+          <img src="./assets/Img-Carrossel/aberturaSite2.jpg" alt="Floresta nebulosa" class="carousel-image">
+          <img src="./assets/Img-Carrossel/AberturaSite6.jpeg" alt="Trilha na natureza" class="carousel-image">
+          <img src="./assets/Img-Carrossel/AberturaSite4.jpeg" alt="Trilha na natureza" class="carousel-image">
+          <img src="./assets/Img-Carrossel/AberturaSite5.jpeg" alt="Trilha na natureza" class="carousel-image">
+          <img src="./assets/Img-Carrossel/aberturaSite3.jpg" alt="Trilha na natureza" class="carousel-image">
+          <img src="./assets/Img-Carrossel/frenteBarbearia.jpg" alt="Lago tranquilo" class="carousel-image">
+      </figure>
+      
+      <button class="carousel-btn next" aria-label="Próxima imagem">&#10095;</button>
+      
+      <nav class="carousel-indicators">
+          <button class="indicator active" data-index="0" aria-label="Ir para imagem 1"></button>
+          <button class="indicator" data-index="1" aria-label="Ir para imagem 2"></button>
+          <button class="indicator" data-index="2" aria-label="Ir para imagem 3"></button>
+          <button class="indicator" data-index="3" aria-label="Ir para imagem 4"></button>
+          <button class="indicator" data-index="4" aria-label="Ir para imagem 5"></button>
+          <button class="indicator" data-index="5" aria-label="Ir para imagem 6"></button>
+          <button class="indicator" data-index="6" aria-label="Ir para imagem 7"></button>
+      </nav>
+  </section>
+<script defer src="./JS/script.js"></script>
   <main>
 
     <!-- MENSAGEM BEM VINDO -->
@@ -61,7 +85,7 @@
     </section>
 
     <section id="PorQue">
-      <h2 class="Premium">Por que escolher a Barbearia Real?</h2>
+      <h2 id="PorQueH2">Por que escolher a Barbearia Real?</h2>
       <ul id="PorQue-ul">
         <li class="PorQue-li">Pontualidade</li>
         <li class="PorQue-li">Produtos premium</li>
@@ -79,7 +103,7 @@
 
   <footer>
     <p><strong>Endereço:</strong> Rua 30 de Dezembro, 149 — Içara SC</p>
-    <iframe src="https://www.google.com/maps/embed?pb=!4v1763193733558!6m8!1m7!1sZhJonYvM6Z3WiS7czUBjbQ!2m2!1d-28.71425258210304!2d-49.29484424472558!3f208.02060385855765!4f-4.881190924010596!5f0.7820865974627469" width="600" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <iframe src="https://www.google.com/maps/embed?pb=!4v1763193733558!6m8!1m7!1sZhJonYvM6Z3WiS7czUBjbQ!2m2!1d-28.71425258210304!2d-49.29484424472558!3f208.02060385855765!4f-4.881190924010596!5f0.7820865974627469"  style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" id="iframe"></iframe>
     <p>© Barbearia Real — Todos os direitos reservados</p>
   </footer>
 </body>

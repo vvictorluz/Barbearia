@@ -73,24 +73,22 @@
         font-size: 1.2rem;
     }
 
-    /* TITULO ABA DA EQUIPE */
-    #TituloEquipe{
-        font-size: 2.5rem;
-        margin-bottom: 1rem;
-        color: #d4af37;
-        text-align: center;
-        font-family: sans-serif;
-          
-    }
-
+   
     /* TITULO DOS ITENS DA LISTA EQUIPE */
     .TituloEquipe{
         text-align: center;
-        font-size: 2rem;
+        
         margin-top: 2rem;
-        margin-bottom: 2rem;
         color: #d4af37;
         font-family: sans-serif;
+    }
+
+    .TituloEquipe#NossaEquipe{
+        margin-bottom: 2rem;
+    }
+
+    .TituloEquipe1{
+        margin-bottom: 2rem;
     }
 
     .FotoEquipe{
@@ -109,6 +107,7 @@
         align-items: center;
         justify-content: center;
         gap: 2rem;
+        margin-top: 3rem;
     }
 
     .EquipeItem{
