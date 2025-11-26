@@ -1,3 +1,27 @@
+const hamburger = document.getElementById('hamburger');
+const menu = document.getElementById('menu');
+const overlay = document.getElementById('overlay');
+const menuLinks = document.querySelectorAll('nav a');
+
+function toggleMenu() {
+  hamburger.classList.toggle('active');
+  menu.classList.toggle('active');
+  overlay.classList.toggle('active');
+}
+
+hamburger.addEventListener('click', toggleMenu);
+overlay.addEventListener('click', toggleMenu);
+
+menuLinks.forEach(link => {
+  link.addEventListener('click', (e) => {
+    toggleMenu();
+  });
+});
+
+
+
+
+
 // Seleção de elementos
 const images = document.querySelectorAll('.carousel-image');
 const indicators = document.querySelectorAll('.indicator');
@@ -53,7 +77,7 @@ indicators.forEach((indicator, index) => {
 
 // Auto-play
 function startAutoPlay() {
-    autoPlayInterval = setInterval(nextImage, 5000);
+    autoPlayInterval = setInterval(nextImage, 4000);
 }
 
 function stopAutoPlay() {
@@ -74,22 +98,3 @@ carousel.addEventListener('mouseleave', startAutoPlay);
 startAutoPlay();
 
 
-const hamburger = document.getElementById('hamburger');
-const menu = document.getElementById('menu');
-const overlay = document.getElementById('overlay');
-const menuLinks = document.querySelectorAll('nav a');
-
-function toggleMenu() {
-  hamburger.classList.toggle('active');
-  menu.classList.toggle('active');
-  overlay.classList.toggle('active');
-}
-
-hamburger.addEventListener('click', toggleMenu);
-overlay.addEventListener('click', toggleMenu);
-
-menuLinks.forEach(link => {
-  link.addEventListener('click', (e) => {
-    toggleMenu();
-  });
-});
